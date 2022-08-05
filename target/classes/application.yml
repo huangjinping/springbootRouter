@@ -1,0 +1,28 @@
+server:
+  port: 8089
+spring:
+  application:
+    name: config-single-server  # 应用名称
+
+
+  devtools:
+    livereload:
+      enabled: true #是否支持livereload
+      port: 35729
+    restart:
+      enabled: true #是否支持热部署
+
+  thymeleaf:
+    cache: true
+    check-template-location: true
+    servlet:
+      content-type: text/html
+    enabled: true
+    encoding: utf-8
+    excluded-view-names:
+    mode: HTML5
+    prefix: classpath:/templates/
+    suffix: .html
+
+
+
